@@ -5,7 +5,6 @@ import Login from "./Componenet/Login";
 import Main from "./Componenet/Main";
 import Registration from "./Componenet/Registration";
 import "./Componenet/App.css";
-
 function App() {
   const [user, setUser] = useState([
     {

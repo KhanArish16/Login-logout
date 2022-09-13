@@ -1,12 +1,22 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+// import { useAuth } from "./Auth";
 
 function Login({ user }) {
   const navigate = useNavigate();
 
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+
+  // useEffect(() => {
+  //   let login = localStorage.getItem("token");
+  //   if (login) {
+  //     navigate("/main");
+  //   } else if (!login) {
+  //     navigate("/login");
+  //   }
+  // });
 
   function loggedIn(e) {
     e.preventDefault();
